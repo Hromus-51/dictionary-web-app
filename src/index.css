@@ -1,0 +1,81 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+:root {
+    /* Typography */
+    --family-mn: 'Inconsolata', monospace;
+    --family-ss: 'Inter', sans-serif;
+    --family-sf: 'Lora', serif;
+
+    /* Font size - heading */
+    --fs-hl: 64px;
+    --lh-hl: 77px;
+
+    --fs-hm: 24px;
+    --lh-hm: 29px;
+
+    --fs-hs: 20px;
+    --lh-hs: 24px;
+
+    /* Font size - heading - mobile*/
+    --fs-hml: 32px;
+    --lh-hml: 39px;
+
+    /* Font size - body */
+    --fs-bm: 18px;
+    --lh-bm: 24px;
+
+    --fs-bs: 14px;
+    --lh-bs: 17px;
+
+    /* Font size - body - mobile*/
+    --fs-bms: 16px;
+    --lh-bms: 20px;
+
+    /* Font weight */
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    /* Colors */
+    --accent: #A445ED;
+    --alert: #FF5252;
+    --secondary: #757575;
+}
+
+/* Dark-theme */
+body[data-theme='dark'] {
+    --color-text: #FFFFFF;
+    --colors-bg: #050505;
+    --colors-bg-input: #1F1F1F;
+    --color-line: #3A3A3A;
+
+    --shadow: 0px 5px 30px #A445ED;
+}
+
+/* Light-theme */
+body[data-theme='light'] {
+    --color-text: #2D2D2D;
+    --colors-bg: #FFFFFF;
+    --colors-bg-input: #F4F4F4;
+    --color-line: #E9E9E9;
+
+    --shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+body[data-font='Mono'] {
+    font-family: var(--family-mn);
+}
+
+body[data-font='Sans Serif'] {
+    font-family: var(--family-ss);
+}
+
+body[data-font='Serif'] {
+    font-family: var(--family-sf);
+}
+
+body {
+    color: var(--color-text);
+    font-weight: var(--fw-regular);
+    background-color: var(--colors-bg);
+}
