@@ -22,10 +22,6 @@ const Search = () => {
 
     useEffect(() => {
         inputRef.current?.focus()
-        // ======================
-        const searchValue = 'keyboard';
-        dispatch(setSearchValue(searchValue))
-        dispatch(fetchWords({ url, searchValue }));
     }, [])
 
     const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
